@@ -121,21 +121,19 @@ p {
 
 #navbar {
   display: block;
-  margin-top: 10px;
-  margin: 0px;
-  padding: 0px;
+  left: 0px;
+
+  padding: 20px;
   list-style: none;
 }
 
 #nav a {
-  text-orientation: mixed;
-  display: flex;
   height: 100vh;
 
   color: #261c15;
 
   margin-left: 20px;
-  position: fixed;
+  position: absolute;
 }
 
 #developer {
@@ -151,24 +149,18 @@ p {
   position: absolute;
 }
 /* About Page  */
-#about {
-  display: flex;
-  background-color: #261c15;
-  padding: 10%;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  gap: 40px;
+.abouthead {
+  text-align: center;
+  justify-content: center;
 }
 
-.about-text {
+.aboutcontent {
   font-size: 18px;
   color: #ffffe6;
   line-height: 1.6;
   text-align: justify;
   text-justify: inter-word;
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   height: 400px;
   width: auto;
