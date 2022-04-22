@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
     <script src="https://kit.fontawesome.com/bb1e3003a2.js" crossorigin="anonymous"></script>
 </head>
   <body>
@@ -21,21 +22,21 @@
         <div id="nav">  
     <nav>
       <ul class="navbar">
-        <li><a href="#"><i class="fa-solid fa-house">Home</i>Home</li>
-        <li><a href="#"></a><i class="fa-solid fa-user">About</i>About</li>
-        <li><a href="#"></a><i class="fa-solid fa-file">Resume</i>Resume</li>
-        <li><a href="#"></a><i class="fa-solid fa-bars-progress">Skills</i>Skills</li>
-        <li><a href="#"></a><i class="fa-solid fa-envelope">Contact</i>Contact</li>
-      </ul>
+        <li><a href="#landingpage"></a><i class="fa-solid fa-house"></i></li>
+        <li><a href="#about"></a><i class="fa-solid fa-user"></i></li>
+        <li><a href="resume"></a><i class="fa-solid fa-file"></i></li>
+        <li><a href="testimonials"></a><i class="fa-solid fa-bars-progress"></i></li>
+        <li><a href="#contact"></a><i class="fa-solid fa-envelope"></i></li>
+    </ul>
     </nav></div>
        <div class="landingcontent">
        <div class="landingtext"><h1 id="landingtitle">Xhanti</h1>
         <h2 id="landingsubtitle">I'm a <span id="developer">Developer</span></h2></div>
 <div class="landingicons">
-            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i>Facebook</a>
-            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i>Linked-in</a>
-            <a href="https://github.com"><i class="fa-brands fa-github"></i>Github</a>
-            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i>Twitter</a>
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
         </div></div> 
     </section>        
 
@@ -116,7 +117,8 @@
     </div>
 </section>
 <section>
-    <div id="resume"><div><h2 id="sectiontitle">Resume</h2><p id="sectionsubtitle">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p></div>
+    <div id="resume">
+        <div><h2 id="sectiontitle">Resume</h2><p id="sectionsubtitle">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p></div>
 <div class="resumecolumns">
 <div id="resumecolumn1">
     <div><h3 id="resumetitle">Summary</h3>
@@ -164,7 +166,30 @@
 </div>
 </div>
 </div>
-    
+    <!-- Testimonials -->
+    <section>
+        <div id="Testimonials"><div><h2 id="sectiontitle">Testimonials</h2></div>
+     <div class="carousel" data-flickity='{ "autoPlay": true }'>
+  <div class="carousel-cell">
+      <img src="./Images/Joshua (4).JPG" alt="">
+      <h4>Josh</h4>
+      <p>Web Developer</p>
+      <p>"Very professional guy, I was so satisfied with the service."</p>
+  </div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+  <div class="carousel-cell">
+       <img src="./Images/Carla (1).JPG" alt="">
+      <h4>Carla</h4>
+      <p>Web Developer</p>
+      <p>"Very professional guy, I was so satisfied with the service."</p>
+  </div>
+  <div class="carousel-cell">
+       <img src="./Images/Live (2).JPG" alt="">
+      <h4>Live</h4>
+      <p>Web Developer</p>
+      <p>"Very professional guy, I was so satisfied with the service."</p>
+  </div>
+</div></div>
+    </section>
 </section>
     <section id="contact">
         <div><h2 id="sectiontitle">Contact</h2><p id="sectionsubtitle">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p></div>
@@ -209,16 +234,17 @@
 
     <!-- Footer section  -->
     <footer>
-        <h3>Xhanti Mpu</h3>
+        <h3 id="footertitle">Xhanti Mpu</h3>
         <p>Creativity Meets Coding</p>
         <div class="footericons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https:/facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="http://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
         </div>
         <p>&copy; Copyright Xhanti. All Rights Reserved.</p>
     </footer>
     <script src="https://kit.fontawesome.com/bb1e3003a2.js" crossorigin="anonymous"></script>
+    <script src="/path/to/flickity.pkgd.min.js"></script>
   </body>
 </html>

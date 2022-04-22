@@ -55,7 +55,7 @@ h3 {
   font-size: 28px;
 }
 h4 {
-font-weight: 600;
+  font-weight: 600;
 }
 
 #about,
@@ -166,7 +166,7 @@ img {
 }
 #aboutsubtitle {
   margin-bottom: 40px;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 h3 {
   font-weight: 700;
@@ -240,11 +240,11 @@ meter {
 }
 #resumelist {
   list-style-type: disc;
-list-style-position: outside;
-margin-left: 20px;
-margin-top: 10px;
+  list-style-position: outside;
+  margin-left: 20px;
+  margin-top: 10px;
 }
-#resumelist >li {
+#resumelist > li {
   margin-bottom: 20px;
 }
 #resumecolumn1 {
@@ -252,12 +252,16 @@ margin-top: 10px;
   flex-direction: column;
   gap: 50px;
   width: 50%;
+  border-left: solid #272829 1px;
+  padding-left: 20px;
 }
 #resumecolumn2 {
   display: flex;
   flex-direction: column;
   gap: 50px;
   width: 50%;
+  border-left: solid #272829 1px;
+  padding-left: 20px;
 }
 #resumetitle {
   font-size: 24px;
@@ -274,6 +278,47 @@ margin-top: 10px;
   margin-bottom: 20px;
 }
 
+/* Testimonials */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-inline: 100px;
+}
+
+.carousel-cell {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  gap: 20px;
+  align-items: center;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+  margin-bottom: 50px;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+.carousel-cell > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
 /* Contact  */
 .contact {
   display: flex;
@@ -349,6 +394,17 @@ footer {
   }
 }
 @media screen and (max-width: 900px) {
+  #about,
+  #skills,
+  #contact,
+  #facts,
+  #sectionsubtitle,
+  #resume,
+  .resumecolumns,
+  .carousel {
+    margin-left: 0px;
+    margin-inline: 10px;
+  }
   p {
     text-align: justify;
   }
@@ -381,6 +437,13 @@ footer {
     font-size: 48px;
     font-weight: 600;
   }
+  #about {
+    margin-inline: 0;
+  }
+  #aboutimage {
+    border-radius: 50%;
+    object-fit: cover;
+  }
   p,
   #abouttextlist {
     font-size: 12px;
@@ -412,18 +475,52 @@ footer {
     text-align: justify;
     margin-inline: 0px;
   }
+  #facts {
+    margin-inline: 0px;
+  }
   #factnum {
     font-size: 24px;
     font-weight: 400;
   }
   .factslist {
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 20px;
   }
 
   .indfacts > p {
     font-size: 10px;
   }
+  #resume {
+    margin-inline: 0px;
+  }
+  #resumelist {
+    font-size: 12px;
+  }
+  #resumetitle {
+    font-size: 16px;
+  }
+  #resumesubtitle {
+    font-size: 14px;
+  }
+  .resumecolumns {
+    margin-inline: 0;
+    gap: 2px;
+    margin-bottom: 100px;
+  }
+  .carousel {
+    margin-inline: 0px;
+    flex-direction: column;
+  }
   .contact {
     flex-direction: column;
+    align-items: center;
+  }
+  #submitbutton {
+    align-items: center;
+  }
+  #footertitle {
+    margin-top: 300px;
   }
 }
