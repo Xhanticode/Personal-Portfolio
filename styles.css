@@ -52,8 +52,12 @@ h2 {
   font-family: "Raleway", sans-serif;
 }
 h3 {
-  font-size: 26px;
+  font-size: 28px;
 }
+h4 {
+font-weight: 600;
+}
+
 #about,
 #facts,
 #skills,
@@ -114,7 +118,7 @@ h3 {
   background-color: transparent;
 }
 #developer {
-  color: dodgerblue;
+  color: whitesmoke;
 }
 .landingicons {
   display: flex;
@@ -162,6 +166,7 @@ img {
 }
 #aboutsubtitle {
   margin-bottom: 40px;
+  letter-spacing: .1rem;
 }
 h3 {
   font-weight: 700;
@@ -230,10 +235,45 @@ meter {
 .resumecolumns {
   display: flex;
   gap: 40px;
+  margin-top: 50px;
+  width: 100%;
+}
+#resumelist {
+  list-style-type: disc;
+list-style-position: outside;
+margin-left: 20px;
+margin-top: 10px;
+}
+#resumelist >li {
+  margin-bottom: 20px;
 }
 #resumecolumn1 {
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 50%;
 }
+#resumecolumn2 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 50%;
+}
+#resumetitle {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+#resumesubtitle {
+  margin: 20px 0px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+#tenure {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
 /* Contact  */
 .contact {
   display: flex;
@@ -246,6 +286,7 @@ meter {
 #mycontact {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 #contactform {
   width: auto;
@@ -291,7 +332,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 20px;
+  row-gap: 10px;
   margin-top: 100px;
 }
 .footericons {
