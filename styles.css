@@ -65,9 +65,9 @@ h4 {
 #contact {
   margin-inline: 200px;
 }
-section:nth-of-type(odd) {
-  background-color: #d5d0cd;
-}
+/* section:nth-of-type(odd) {
+  background-color: #f8f5f3;
+} */
 /* Landing page  */
 #landingpage {
   height: 100vh;
@@ -178,7 +178,7 @@ section:nth-of-type(odd) {
   font-size: 28px;
   color: #45505b;
   margin-bottom: 20px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 #sectionsubtitle {
   margin-bottom: 20px;
@@ -313,6 +313,10 @@ meter {
   font-size: 14px;
   margin-bottom: 20px;
 }
+
+/* Projects */
+
+/* Button trigger modal */
 
 /* Testimonials */
 * {
