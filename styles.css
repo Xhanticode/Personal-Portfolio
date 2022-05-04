@@ -192,6 +192,7 @@ h4 {
   color: #45505b;
   margin-bottom: 20px;
   margin-top: 100px;
+  /* border-bottom: solid #272829; */
 }
 #sectionsubtitle {
   margin-bottom: 20px;
@@ -413,7 +414,6 @@ footer {
   #resume,
   .resumecolumns,
   .carousel {
-    margin-left: 0px;
     margin-inline: 10px;
   }
   .mobile-nav-toggle {
@@ -441,7 +441,7 @@ footer {
   #skills,
   #contact {
     margin-left: 0px;
-    margin-inline: 2px;
+    margin-inline: 10px;
   }
   #aboutcontent {
     gap: 2px;
@@ -454,8 +454,7 @@ footer {
   #about,
   #skills,
   #contact {
-    margin-left: 0px;
-    margin-inline: 2px;
+    margin-inline: 10px;
   }
   /* #nav {
     display: none;
@@ -505,14 +504,15 @@ footer {
   #sectiontitle {
     font-size: 18px;
     margin-top: 20px;
+    margin-inline: 20px;
   }
   #sectionsubtitle {
     font-size: 12px;
     text-align: justify;
-    margin-inline: 0px;
+    margin-inline: 10px;
   }
   #facts {
-    margin-inline: 0px;
+    margin-inline: 10px;
   }
   #factnum {
     font-size: 24px;
@@ -528,7 +528,7 @@ footer {
     font-size: 10px;
   }
   #resume {
-    margin-inline: 0px;
+    margin-inline: 10px;
   }
   #resumelist {
     font-size: 12px;
@@ -545,7 +545,7 @@ footer {
     margin-bottom: 100px;
   }
   .carousel {
-    margin-inline: 0px;
+    margin-inline: 10px;
     flex-direction: column;
   }
   .contact {
@@ -556,6 +556,6 @@ footer {
     align-items: center;
   }
   #footertitle {
-    margin-top: 300px;
+    margin-top: 200px;
   }
 }
